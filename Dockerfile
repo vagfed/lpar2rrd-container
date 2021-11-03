@@ -1,4 +1,4 @@
-FROM centos:8
+FROM quay.io/centos/centos:8
 
 ######################################
 # Build lpar2rrd image
