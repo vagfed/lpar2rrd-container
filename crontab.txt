@@ -1,0 +1,4 @@
+# LPAR2RRD UI
+0 * * * * /home/lpar2rrd/lpar2rrd/load.sh > /home/lpar2rrd/lpar2rrd/load.out 2>&1
+# HMC REST API support
+0,20,40 * * * *  /home/lpar2rrd/lpar2rrd/load_hmc_rest_api.sh > /home/lpar2rrd/lpar2rrd/load_hmc_rest_api.out 2>&1 

@@ -1,0 +1,13 @@
+lpar2rrd        hard    stack           -1
+lpar2rrd        soft    stack           -1
+lpar2rrd        hard    data            -1
+lpar2rrd        soft    data            -1
+lpar2rrd        hard    nofile          32768 
+lpar2rrd        soft    nofile          32768 
+lpar2rrd        hard    nproc           5000
+lpar2rrd        soft    nproc           5000
+
+apache          hard    stack           -1
+apache          soft    stack           -1
+apache          hard    data            -1
+apache          soft    data            -1
