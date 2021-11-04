@@ -42,14 +42,14 @@ RUN echo "lpar2rrd" >> /var/adm/cron/cron.allow
 # Install lpar2rrd
 ARG VERSION=lpar2rrd-7.30
 WORKDIR $TEMP
-RUN yum install -y wget
+RUN yum install -y wget which
 RUN wget https://www.lpar2rrd.com/download-static/lpar2rrd/$VERSION.tar
 #COPY $VERSION.tar $TEMP
 USER lpar2rrd
 WORKDIR /home/lpar2rrd
 RUN tar xvf $TEMP/$VERSION.tar
 WORKDIR $VERSION
-RUN echo -e "\n" | ./install.sh
+RUN echo -e "\n"  | ./install.sh
 RUN chmod -R 777 /home/lpar2rrd
 WORKDIR /home/lpar2rrd/lpar2rrd
 
